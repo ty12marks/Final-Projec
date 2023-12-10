@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+/* Apply styles to each section with a common class */
+section {
+    padding: 20px;
+}
+
+/* Apply styles to the image and content within each section */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-photo {
+    width: 45%; /* Adjust the width of the photo */
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.section-content {
+    width: 45%; /* Adjust the width of the content */
+}
+
+/* Add any additional styling as needed */
