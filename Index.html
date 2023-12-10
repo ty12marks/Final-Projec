@@ -53,21 +53,23 @@
 <body>
     <header>
         <h1>Tyler Marks</h1>
-        <p>Actor | [Detriot]</p>
+        <p>Actor | [Detroit]</p>
     </header>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About Me</a>
-        <a href="#contact">Contact</a>
+        <!-- Remove the link to the contact page -->
+        <!-- <a href="#contact">Contact</a> -->
         <a href="#resume">Resume</a>
     </nav>
 
     <iframe src="home.html" frameborder="0" scrolling="no"></iframe>
     <iframe src="projects.html" frameborder="0" scrolling="no"></iframe>
     <iframe src="about.html" frameborder="0" scrolling="no"></iframe>
-    <iframe src="contact.html" frameborder="0" scrolling="no"></iframe>
+    <!-- Remove the iframe for the contact page -->
+    <!-- <iframe src="contact.html" frameborder="0" scrolling="no"></iframe> -->
     <iframe src="resume.html" frameborder="0" scrolling="no"></iframe>
 
     <footer>
@@ -87,31 +89,29 @@
             });
         });
     </script>
-    <!-- Add this updated script at the end of the body in index.html -->
-<script>
-    // Smooth scrolling within iframes
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
+    <!-- Additional script for smooth scrolling within iframes -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
 
-            // If the target element is inside an iframe
-            if (targetElement.closest('iframe')) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'nearest',
-                    inline: 'nearest'
-                });
-            } else {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+                if (targetElement.closest('iframe')) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest',
+                        inline: 'nearest'
+                    });
+                } else {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 
