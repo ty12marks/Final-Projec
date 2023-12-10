@@ -1,5 +1,52 @@
 <!-- about.html -->
-<section id="about">
-    <h2>About Me</h2>
-    <!-- Include information about yourself, background, and upbringing -->
-</section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Me - Tyler Marks</title>
+</head>
+
+<body>
+
+    <section id="about" class="flex-container">
+        <!-- Add the URL of your about section photo below -->
+        <img src="images/about_photo.jpg" alt="About Me Photo" class="section-photo">
+
+        <div class="section-content">
+            <h2>About Me</h2>
+            <!-- Include information about yourself, background, and upbringing -->
+            <p>...</p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling within iframes
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                // If the target element is inside an iframe
+                if (targetElement.closest('iframe')) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'nearest',
+                        inline: 'nearest'
+                    });
+                } else {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
