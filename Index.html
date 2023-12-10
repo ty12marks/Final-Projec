@@ -1,0 +1,52 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Actor Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Actor | [Your Location]</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="home.html" frameborder="0" scrolling="no" width="100%" height="1000"></iframe>
+    <iframe src="projects.html" frameborder="0" scrolling="no" width="100%" height="1000"></iframe>
+    <iframe src="about.html" frameborder="0" scrolling="no" width="100%" height="1000"></iframe>
+    <iframe src="contact.html" frameborder="0" scrolling="no" width="100%" height="1000"></iframe>
+    <iframe src="resume.html" frameborder="0" scrolling="no" width="100%" height="1000"></iframe>
+
+    <footer>
+        <p>Contact: your@email.com | Phone: (123) 456-7890</p>
+        <!-- Add links to your social media profiles if desired -->
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
