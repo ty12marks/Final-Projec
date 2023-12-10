@@ -87,6 +87,32 @@
             });
         });
     </script>
+    <!-- Add this updated script at the end of the body in index.html -->
+<script>
+    // Smooth scrolling within iframes
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // If the target element is inside an iframe
+            if (targetElement.closest('iframe')) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'nearest'
+                });
+            } else {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>
