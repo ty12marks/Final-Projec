@@ -1,5 +1,4 @@
 /* styles.css */
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -27,6 +26,22 @@ nav a {
     font-size: 18px;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.section-photo {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.section-content {
+    max-width: 60%; /* Adjust the maximum width of the content */
+}
+
 iframe {
     width: 100%;
     height: 100vh;
@@ -39,27 +54,3 @@ footer {
     background-color: #333;
     color: white;
 }
-
-/* Apply styles to each section with a common class */
-section {
-    padding: 20px;
-}
-
-/* Apply styles to the image and content within each section */
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.section-photo {
-    width: 45%; /* Adjust the width of the photo */
-    max-height: 400px;
-    object-fit: cover;
-}
-
-.section-content {
-    width: 45%; /* Adjust the width of the content */
-}
-
-/* Add any additional styling as needed */
