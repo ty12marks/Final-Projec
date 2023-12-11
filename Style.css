@@ -1,56 +1,24 @@
 /* styles.css */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
-header {
-    background-color: #333;
-    padding: 15px;
-    text-align: center;
-    color: white;
-}
-
-nav {
+/* Add styling for the projects-container and adjust layout */
+#projects {
     display: flex;
-    justify-content: center;
-    background-color: #444;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-.flex-container {
+.projects-container {
     display: flex;
-    justify-content: space-between; /* Align items with space between them */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add some padding for spacing */
+    justify-content: space-between;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
 }
 
-.section-photo {
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+.projects-list {
+    flex: 1; /* Take up remaining space */
+    margin-right: 20px; /* Add spacing between projects and videos */
 }
 
-.section-content {
-    max-width: 60%; /* Adjust the maximum width of the content */
-}
-
-iframe {
-    width: 100%;
-    height: 100vh;
-    border: none;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
-    color: white;
+.video-list {
+    flex: 1; /* Take up remaining space */
 }
