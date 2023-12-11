@@ -1,13 +1,9 @@
-/* Update the link to include the Argyle Socks font */
-@import url('https://fonts.googleapis.com/css2?family=Argyle+Socks&display=swap');
-
-/* Update the font-family property for body */
+/* styles.css */
 body {
     margin: 0;
-    font-family: 'Argyle Socks', sans-serif; /* Use 'Argyle Socks' as the primary font, fallback to sans-serif if not available */
+    font-family: Arial, sans-serif;
 }
 
-/* Rest of your existing styles */
 header {
     background-color: #333;
     padding: 15px;
@@ -32,18 +28,18 @@ nav a {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding for spacing */
 }
 
 .section-photo {
-    width: 300px;
-    height: auto;
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .section-content {
-    max-width: 60%;
+    max-width: 60%; /* Adjust the maximum width of the content */
 }
 
 iframe {
