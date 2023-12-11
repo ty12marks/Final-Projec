@@ -1,7 +1,8 @@
- /* styles.css */
- body {
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Argyle+Socks&display=swap">
+/* styles.css */
+body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Argyle Socks', sans-serif; /* Use 'Argyle Socks' as the primary font, fallback to sans-serif if not available */
 }
 
 header {
@@ -28,18 +29,18 @@ nav a {
 
 .flex-container {
     display: flex;
-    justify-content: space-between; /* Align items with space between them */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add some padding for spacing */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 .section-photo {
-    width: 300px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 300px;
+    height: auto;
 }
 
 .section-content {
-    max-width: 60%; /* Adjust the maximum width of the content */
+    max-width: 60%;
 }
 
 iframe {
@@ -54,4 +55,3 @@ footer {
     background-color: #333;
     color: white;
 }
-
