@@ -1,10 +1,13 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Argyle+Socks&display=swap">
-/* styles.css */
+/* Update the link to include the Argyle Socks font */
+@import url('https://fonts.googleapis.com/css2?family=Argyle+Socks&display=swap');
+
+/* Update the font-family property for body */
 body {
     margin: 0;
     font-family: 'Argyle Socks', sans-serif; /* Use 'Argyle Socks' as the primary font, fallback to sans-serif if not available */
 }
 
+/* Rest of your existing styles */
 header {
     background-color: #333;
     padding: 15px;
