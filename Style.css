@@ -1,10 +1,9 @@
-/* Resetting default margin and font family */
-body {
+ /* styles.css */
+ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Header styling */
 header {
     background-color: #333;
     padding: 15px;
@@ -12,7 +11,6 @@ header {
     color: white;
 }
 
-/* Navigation styling */
 nav {
     display: flex;
     justify-content: center;
@@ -28,56 +26,32 @@ nav a {
     font-size: 18px;
 }
 
-/* Common styling for content sections */
-.content-section {
+.flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+    justify-content: space-between; /* Align items with space between them */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding for spacing */
 }
 
-/* Styling for section photos */
 .section-photo {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.section-content {
+    max-width: 60%; /* Adjust the maximum width of the content */
+}
+
+iframe {
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    height: 100vh;
+    border: none;
 }
 
-/* Styling for project containers and individual projects */
-.project-container {
-    max-width: 800px;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-
-/* Styling for resume section */
-.resume-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.resume-left,
-.resume-right {
-    flex: 1;
-}
-
-/* Styling for embedded PDF and iframe */
-iframe,
-object {
-    width: 100%;
-    max-width: 800px;
-    height: 600px; /* Adjust height as needed */
-}
-
-/* Footer styling */
 footer {
     text-align: center;
     padding: 15px;
+    background-color: #333;
+    color: white;
+}
+

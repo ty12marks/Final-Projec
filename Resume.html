@@ -1,33 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- resume.html -->
+<section id="resume">
+    <h2>Resume</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Resume - Tyler Marks</title>
-</head>
+    <div class="resume-section">
+        <!-- Left column for the picture -->
+        <div class="resume-left">
+            <!-- Add the URL of your resume photo below -->
+            <img src="Images/DSC_8641.JPG" alt="Resume Photo" style="width: 300px; height: auto; object-fit: cover; object-position: 50% 20%; border-radius: 10px;">
+        </div>
 
-<body>
-    <header>
-        <h1>Resume</h1>
-    </header>
+        <!-- Right column for the PDF -->
+        <div class="resume-right">
+            <!-- Add an iframe to display the PDF -->
+            <iframe src="Images/My resume.pdf" style="width: 100%; height: 400px;"></iframe>
+            <!-- Add a link to your resume PDF below -->
+            <p><a href="Images/My resume.pdf" target="_blank" style="font-size: 18px; color: #333;">Download Resume PDF</a></p>
+        </div>
+    </div>
 
-    <nav>
-        <!-- You can include navigation links here if needed -->
-    </nav>
-
-    <section id="resume" class="content-section">
-        <div class="resume-section">
-            <div class="resume-left">
-                <img src="Images/DSC_8641.JPG" alt="Resume Photo" class="section-photo">
-            </div>
-
-            <div class="resume-right">
-                <h2>My Resume</h2>
-                <p>Explore my resume to learn more about my professional journey, skills, and experiences in the world of acting. For a more detailed view, you can download the PDF version.</p>
-
-                <object data="Images/My resume.pdf" type="application/pdf" style="width: 100%; height: 600px;">
-                    <p>It appears you don't have a PDF plugin for this browser. You can <a href="Images/My resume.pdf" target="_blank">download the PDF file.</a></p>
-                </object>
-    
+    <!-- Include details about your education, experience, and skills -->
+    <p>Your education, experience, and skills details go here...</p>
+</section>
