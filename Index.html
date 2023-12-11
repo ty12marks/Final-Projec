@@ -7,6 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Tyler Marks - Actor Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -51,31 +92,25 @@
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    <!-- Additional script for smooth scrolling within iframes -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
 
-                if (targetElement.closest('iframe')) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'nearest',
-                        inline: 'nearest'
-                    });
-                } else {
+                if (targetElement) {
+                    // If the target element is in the main document
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
+                } else {
+                    // If the target element is inside an iframe
+                    const iframeId = this.closest('iframe').id;
+                    const iframeWindow = document.getElementById(iframeId).contentWindow;
+                    const targetElementInIframe = iframeWindow.document.getElementById(targetId);
+
+                    if (targetElementInIframe) {
+                        targetElementInIframe.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
                 }
             });
         });
