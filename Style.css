@@ -22,7 +22,8 @@
 .video-list {
     flex: 1; /* Take up remaining space */
 }
-/* styles.css */
+
+/* Additional styling for the project list */
 .project-list {
     list-style-type: none;
 }
@@ -31,6 +32,7 @@
     margin-bottom: 10px;
 }
 
+/* Styling for the video container */
 .video-container {
     display: flex;
     flex-wrap: wrap;
@@ -42,4 +44,3 @@
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
