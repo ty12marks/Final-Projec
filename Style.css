@@ -1,8 +1,10 @@
+/* Resetting default margin and font family */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     padding: 15px;
@@ -10,6 +12,7 @@ header {
     color: white;
 }
 
+/* Navigation styling */
 nav {
     display: flex;
     justify-content: center;
@@ -25,6 +28,7 @@ nav a {
     font-size: 18px;
 }
 
+/* Common styling for content sections */
 .content-section {
     display: flex;
     flex-direction: column;
@@ -33,6 +37,7 @@ nav a {
     padding: 20px;
 }
 
+/* Styling for section photos */
 .section-photo {
     width: 100%;
     max-width: 400px;
@@ -41,6 +46,7 @@ nav a {
     margin-bottom: 20px;
 }
 
+/* Styling for project containers and individual projects */
 .project-container {
     max-width: 800px;
 }
@@ -49,6 +55,7 @@ nav a {
     margin-bottom: 20px;
 }
 
+/* Styling for resume section */
 .resume-section {
     display: flex;
     justify-content: center;
@@ -62,16 +69,15 @@ nav a {
     flex: 1;
 }
 
+/* Styling for embedded PDF and iframe */
 iframe,
 object {
     width: 100%;
     max-width: 800px;
-    height: 100%;
+    height: 600px; /* Adjust height as needed */
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
-    color: white;
-}
