@@ -1,50 +1,37 @@
-I apologize for the confusion. I misunderstood your initial request. If you want the YouTube videos to be displayed separately from the project descriptions, here's how you can structure your HTML:
-
-```html
 <!-- projects.html -->
-<section id="projects">
-    <h2>My Projects</h2>
+<!DOCTYPE html>
+<html lang="en">
 
-    <ul>
-        <li>
-            <strong>Xbox, Black Panther Promotion</strong> — Commercial
-        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Projects - Tyler Marks</title>
+</head>
 
-        <li>
-            <strong>Foot Locker, Design with Sole</strong> — Commercial
-        </li>
+<body>
+    <section id="projects" class="content-section">
+        <div class="project-container">
+            <h2>My Projects</h2>
 
-        <li>
-            <strong>Moving Forward</strong> — Student Film | Role: Matt
-        </li>
+            <div class="project">
+                <h3>Xbox, Black Panther Promotion</h3>
+                <p>Commercial</p>
+                <!-- Add any additional project details, paragraphs, or images here -->
+            </div>
 
-        <!-- Continue this pattern for each project -->
-        
-        <li>
-            <strong>The Gold Ones</strong> — Student Film | Role: John
-        </li>
+            <div class="project">
+                <h3>Foot Locker, Design with Sole</h3>
+                <p>Commercial</p>
+                <!-- Add any additional project details, paragraphs, or images here -->
+            </div>
 
-        <!-- Add similar sections for other projects -->
+            <!-- Repeat the structure for other projects -->
 
-    </ul>
-</section>
+        </div>
+    </section>
 
-<!-- YouTube Videos Section -->
-<section id="videos">
-    <h2>Project Videos</h2>
+    <script src="scripts.js"></script>
+</body>
 
-    <div class="video">
-        <!-- Embed YouTube video for Xbox, Black Panther Promotion -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/QnvwOwt7HZU" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="video">
-        <!-- Embed YouTube video for Foot Locker, Design with Sole -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FPepIUhynEM" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <!-- Continue this pattern for each video -->
-
-</section>
-```
-
+</html>

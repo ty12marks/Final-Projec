@@ -10,46 +10,16 @@
 </head>
 
 <body>
-
-    <section id="about" class="flex-container">
-        <!-- Updated photo path -->
-        <img src="images/DSC_7859.JPG" alt="About Me Photo" class="section-photo" width="150" height="150">
-
+    <section id="about" class="content-section">
+        <img src="Images/DSC_7859.JPG" alt="About Me Photo" class="section-photo">
         <div class="section-content">
             <h2>About Me</h2>
-            <!-- Include information about yourself, background, and upbringing -->
-            <p>Hey there, I'm Tyler Marks, an actor currently immersed in the world of musical theater at MSU. My journey in acting has been shaped by various training programs, including the Michigan School of Film in Detroit. I hail from the cozy town of Wixom, just a short 30-minute drive from the vibrant city of Detroit. Growing up with a brother and a watchful older sister, sports played a big role in my life. Swimming, track, and football were my go-to choices, and as high school approached, track and school musicals became my main focus.
-
-                Upon entering Michigan State University, my passion for acting persisted, with a slight shift towards film. Yet, I couldn't let go of my love for music. Balancing film acting on one side, I delved into writing and singing music whenever I could. Fast forward to today, I find myself on the brink of graduating as a senior this spring, eagerly pursuing my dream of making it big in the acting scene. Here's to the journey!
-                </p>
+            <p>Hey there, I'm Tyler Marks, an actor currently immersed in the world of musical theater at MSU. My journey in acting has been shaped by various training programs, including the Michigan School of Film in Detroit. I hail from the cozy town of Wixom, just a short 30-minute drive from the vibrant city of Detroit. Growing up with a brother and a watchful older sister, sports played a big role in my life. Swimming, track, and football were my go-to choices, and as high school approached, track and school musicals became my main focus.</p>
+            <p>Upon entering Michigan State University, my passion for acting persisted, with a slight shift towards film. Yet, I couldn't let go of my love for music. Balancing film acting on one side, I delved into writing and singing music whenever I could. Fast forward to today, I find myself on the brink of graduating as a senior this spring, eagerly pursuing my dream of making it big in the acting scene. Here's to the journey!</p>
         </div>
     </section>
 
-    <script>
-        // Smooth scrolling within iframes
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                // If the target element is inside an iframe
-                if (targetElement.closest('iframe')) {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'nearest',
-                        inline: 'nearest'
-                    });
-                } else {
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
